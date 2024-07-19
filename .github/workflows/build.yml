@@ -1,5 +1,5 @@
 name: Build Project
-
+#using temurin jdk8
 on:
   push:
     branches: suyashgaonkar-kt-issue644
@@ -11,8 +11,7 @@ on:
 jobs:
   setup:
     runs-on: windows-latest
-    timeout-minutes: 20
-
+    timeout-minutes: 20 
     name: Gradle Setup
     steps:
       - uses: actions/checkout@v4
